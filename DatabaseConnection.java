@@ -1,4 +1,4 @@
-package synchronisation;
+package singlethreaded;
 
 public class DatabaseConnection {
 	
@@ -8,21 +8,15 @@ public class DatabaseConnection {
 		
 	}
 	//If we will create private constructor we need to provide method getInstance method of 
-	//type static to create object if we will not create ten this class is of no use.
+	//type static to create object if we will not create then this class is of no use.
 	
-	public synchronized static DatabaseConnection getInstance() {
+	public static DatabaseConnection getInstance() {
 		
 		if(instance==null)
 		{
 			instance = new DatabaseConnection();//creating instance else return instance
 		}
 		return instance;
-		
-		/*this implementation will work in Multithreaded environment.
-		 * But Performance is not good.So will not prefer.
-		 * So will not prefer this way.
-		 * 
-		 */
 		
 	}
 
