@@ -1,4 +1,4 @@
-package singlethreaded;
+package earlyloading;
 
 public class Client {
 
@@ -11,10 +11,10 @@ public class Client {
 		
 		//This will return same address (Example of singleton class.)Also this will work in single
 		//threaded application not in multi-threaded application. 
-		//This will only work in Single threaded application , will not work in Multi-threaded application.
 		
-		/*
+		/*Do same assignment
 		 * Assignment - create 2 threads and try to create the object of DBC from those two threads.
+		 * In this case we will get the same object as we are using early loading.
 		 */
 		
 	}
